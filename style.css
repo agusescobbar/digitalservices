@@ -1,4 +1,4 @@
-/* Reset básico */
+
 /* ESTE CODIGO Y EL CSS ESTA HECHO POR @AGUSESCOBBAR, es un spagetti pero funciona :p */
 * {
   margin: 0;
@@ -80,10 +80,8 @@ section {
   padding: 2rem 0;
 }
 
-
-
 div {
-  display: grid;
+ display: grid;
   grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
   gap: 30px;
 }
@@ -334,6 +332,11 @@ scroll-margin : 3rem;
   padding: 2rem;
 }
 
+.container-contenido {
+  gap: 2rem;
+  padding: 2rem;
+}
+
 /* Estilo para cada bloque */
 .servicio {
   background-color: white;
@@ -354,6 +357,17 @@ scroll-margin : 3rem;
 .servicio p {
   color: #555;
   font-size: 0.95rem;
+}
+
+.servicio-contenido {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
 }
 
 .servicio-contenido {
@@ -403,6 +417,20 @@ scroll-margin : 3rem;
   }
 }
 
+.iconos {
+  width: 5rem;
+}
+
+.iconos:hover{
+  transform: scale(1.05);
+}
+
+.contenedor-iconos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 /* pie de la pagina, osea texto debajo de todo */
 footer {
